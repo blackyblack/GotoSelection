@@ -15,7 +15,7 @@ GotoSelectionDef can be installed by:
 * Cloning this repository in Packages
 
 		Change directory into your Sublime Text Packages folder
-                git clone https://github.com/blackyblack/GotoSelection.git
+		git clone https://github.com/blackyblack/GotoSelection.git
 
 * Downloading the files manually and placing them in a directory under your Sublime Text Packages folder (such as GotoSelectionDef)
 
