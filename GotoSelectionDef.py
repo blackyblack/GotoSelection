@@ -7,7 +7,7 @@ import sublime_plugin
 # Goto Anything overlay and pre-fill it with the class name, which for my usage makes navigating my projects much easier.
 # Default keybinding is ctrl + ;
 
-class GotoSelectionCommand(sublime_plugin.WindowCommand):
+class GotoSelectionDefCommand(sublime_plugin.WindowCommand):
     def run(self):
         # If you wish, you can enable the use of custom word separators.  Sublime Text will use these
         # to determine where a "word" begins and ends.  The values for these are set in the default settings,
@@ -53,6 +53,8 @@ class GotoSelectionCommand(sublime_plugin.WindowCommand):
         if len(lineContents) > 0:
             while (lineContents[0] in "# "):
                 lineContents = lineContents[1:]
+
+        lineContents = '#' + lineContents
 
         # Call the goto overlay, give it the current word or selection, and ask it to show files
         self.window.run_command("show_overlay", {"overlay": "goto", "text": lineContents, "show_files": "true"})
