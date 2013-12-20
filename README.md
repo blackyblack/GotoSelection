@@ -10,12 +10,12 @@ Small plugin for Sublime Text that pre-fills the Goto Word overlay with the sele
 Installation
 ------------
 
-GotoSelection can be installed by:
+GotoSelectionDef can be installed by:
 
 * Cloning this repository in Packages
 
 		Change directory into your Sublime Text Packages folder
-		git clone git://github.com/FordAldrich/GotoSelection.git
+                git clone https://github.com/blackyblack/GotoSelection.git
 
 * Downloading the files manually and placing them in a directory under your Sublime Text Packages folder (such as GotoSelectionDef)
 
